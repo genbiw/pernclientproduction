@@ -1,0 +1,11 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
+}
+
+.main-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
