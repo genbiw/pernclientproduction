@@ -1,0 +1,17 @@
+.type-bar {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.type-bar__item {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.type-bar__item--active {
+    background-color: beige;
+}

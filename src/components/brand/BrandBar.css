@@ -1,0 +1,15 @@
+.brand-bar {
+    display: flex;
+}
+
+.brand-bar__item {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.brand-bar__item--active {
+    background-color: beige;
+}

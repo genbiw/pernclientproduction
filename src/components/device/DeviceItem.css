@@ -1,0 +1,42 @@
+.device-list__item {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.device-item {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 210px;
+}
+
+.device-item__img { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.device-item__img img {
+    width: 150px;
+    height: 150px;
+    object-fit:fill;
+    /* object-position: center; */
+}
+
+.device-item__raiting {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.raiting__img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.raiting__img img {
+    margin-left: 2px;
+}

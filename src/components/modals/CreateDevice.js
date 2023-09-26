@@ -80,7 +80,7 @@ const CreateDevice = observer(({show, onHide}) => {
                     <Form.Control className='mt-3' placeholder='Enter device price' type='number' value={price} onChange={e => setPrice(Number(e.target.value))}/>
                     <Form.Control className='mt-3' type='file' onChange={selectFile}/>
                     <hr/>
-                    <Button variant='outline-dark' onClick={addInfo}>Add new parametr</Button>
+                    <Button variant='outline-dark' onClick={addInfo}>Add new parameter</Button>
                     {
                         info.map(i => 
                             <Row className='mt-4' key={i.number}>

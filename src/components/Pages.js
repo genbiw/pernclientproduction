@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react-lite';
 import React, { useContext } from 'react';
 import { Context } from '../index';
-import { Pagination } from 'react-bootstrap';
+import "./Pages.css"
 
 const Pages = observer(() => {
     const { device } = useContext(Context)
@@ -13,11 +13,11 @@ const Pages = observer(() => {
     }
 
     return (
-        <Pagination className='mt-5'>
+        <div className='pages'>
             {pages.map(page => 
-                <Pagination.Item key={page} active={device.page === page} onClick={() => device.setPage(page)}>{page}</Pagination.Item> 
+                <div className='pages__item' key={page} active={device.page === page} onClick={() => device.setPage(page)}>{page}</div> 
                 )}
-        </Pagination>
+        </div>
     );
 });
 

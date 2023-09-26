@@ -1,18 +1,20 @@
 import { observer } from 'mobx-react-lite';
 import React, { useContext } from 'react';
-import { Context } from '../index';
-import { Row } from 'react-bootstrap';
+import { Context } from '../../index';
 import DeviceItem from './DeviceItem';
+import "./DeviceList.css"
 
 const DeviceList = observer(() => {
     const {device} = useContext(Context)
     return (
-        <Row className='d-flex'>
+        <div className='device-list'>
+            <div className='device-list__container'>
             {device.devices.map(device => 
                 <DeviceItem key={device.id} device={device}/>
                 )}
-        </Row>
+            </div>
+        </div>
     );
 });
 
-export default DeviceList;
+export default DeviceList; 

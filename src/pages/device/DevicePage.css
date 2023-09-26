@@ -1,0 +1,53 @@
+.device-page {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.device-page__main-row {
+
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.device-page__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.device-page__img {
+    align-self: center;
+    width: 300px;
+}
+
+.device-page__raiting {
+    margin: 5px 0;
+    display: flex;
+    justify-content: end;
+}
+
+.raiting__title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.device-page__price {
+    width: 300px;
+    height: 300px;
+    border: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.characteristics__lightgrey {
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+.characteristics__transparent {
+    background-color: transparent;
+    padding: 5px;
+}
